@@ -1,0 +1,13 @@
+[Unit]
+Description=SheepIt client
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+ExecStart=/usr/bin/java -jar /home/ubuntu/sheepit-client-5.1292.2977.jar -login sowdowdow -password DgW1zLEvQV0wbqlNV$
+Restart=always
+
+
+[Install]
+WantedBy=multi-user.target
